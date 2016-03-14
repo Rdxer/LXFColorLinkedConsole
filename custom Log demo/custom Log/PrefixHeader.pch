@@ -1,0 +1,15 @@
+//
+//  PrefixHeader.pch
+//  custom Log
+//
+//  Created by LXF on 16/1/1.
+//  Copyright © 2016年 LXF. All rights reserved.
+//
+
+#ifndef PrefixHeader_pch
+#define PrefixHeader_pch
+
+
+#import "CustomLogTools.h"
+
+#endif /* PrefixHeader_pch */
