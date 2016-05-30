@@ -1,0 +1,16 @@
+//
+//  PrefixHeader.pch
+//  LXFColorLinkedConsole
+//
+//  Created by LXF on 16/5/30.
+//  Copyright © 2016年 LXF. All rights reserved.
+//
+
+#ifndef PrefixHeader_pch
+#define PrefixHeader_pch
+
+#import "CustomLogTools.h"
+
+#define aaa "xxx"
+
+#endif /* PrefixHeader_pch */

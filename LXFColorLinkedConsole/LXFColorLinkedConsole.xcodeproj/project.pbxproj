@@ -1,0 +1,481 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		FD65A6491CFC06790082D8AB /* LXFColorLinkedConsole.xcscheme in Resources */ = {isa = PBXBuildFile; fileRef = FD65A6481CFC06790082D8AB /* LXFColorLinkedConsole.xcscheme */; };
+		FD65A64B1CFC06790082D8AB /* LXFColorLinkedConsole.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD65A64A1CFC06790082D8AB /* LXFColorLinkedConsole.swift */; };
+		FD65A65B1CFC06D30082D8AB /* NSTextStorage+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD65A6531CFC06D30082D8AB /* NSTextStorage+Extensions.swift */; };
+		FD65A65C1CFC06D30082D8AB /* NSTextView+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD65A6541CFC06D30082D8AB /* NSTextView+Extensions.swift */; };
+		FD65A65D1CFC06D30082D8AB /* JRSwizzle.m in Sources */ = {isa = PBXBuildFile; fileRef = FD65A6571CFC06D30082D8AB /* JRSwizzle.m */; };
+		FD65A65E1CFC06D30082D8AB /* KZFunctions.m in Sources */ = {isa = PBXBuildFile; fileRef = FD65A6591CFC06D30082D8AB /* KZFunctions.m */; };
+		FD65A65F1CFC06D30082D8AB /* KZPluginHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD65A65A1CFC06D30082D8AB /* KZPluginHelper.swift */; };
+		FD71BDF91CFC1BBA00120456 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = FD71BDF81CFC1BBA00120456 /* AppDelegate.m */; };
+		FD71BDFC1CFC1BBA00120456 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = FD71BDFB1CFC1BBA00120456 /* main.m */; };
+		FD71BDFF1CFC1BBA00120456 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FD71BDFE1CFC1BBA00120456 /* ViewController.m */; };
+		FD71BE011CFC1BBA00120456 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FD71BE001CFC1BBA00120456 /* Assets.xcassets */; };
+		FD71BE041CFC1BBA00120456 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FD71BE021CFC1BBA00120456 /* Main.storyboard */; };
+		FD71BE2E1CFC268500120456 /* NSTextStorage+XcodeColors.m in Sources */ = {isa = PBXBuildFile; fileRef = FD71BE2D1CFC268500120456 /* NSTextStorage+XcodeColors.m */; };
+		FDC0CA641CFC8503002D32AF /* NSColor+NSColor_HEX.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDC0CA631CFC8503002D32AF /* NSColor+NSColor_HEX.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		FD65A6441CFC06790082D8AB /* LXFColorLinkedConsole.xcplugin */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LXFColorLinkedConsole.xcplugin; sourceTree = BUILT_PRODUCTS_DIR; };
+		FD65A6481CFC06790082D8AB /* LXFColorLinkedConsole.xcscheme */ = {isa = PBXFileReference; lastKnownFileType = text.xml; name = LXFColorLinkedConsole.xcscheme; path = LXFColorLinkedConsole.xcodeproj/xcshareddata/xcschemes/LXFColorLinkedConsole.xcscheme; sourceTree = SOURCE_ROOT; };
+		FD65A64A1CFC06790082D8AB /* LXFColorLinkedConsole.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LXFColorLinkedConsole.swift; sourceTree = "<group>"; };
+		FD65A64C1CFC06790082D8AB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FD65A6531CFC06D30082D8AB /* NSTextStorage+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NSTextStorage+Extensions.swift"; sourceTree = "<group>"; };
+		FD65A6541CFC06D30082D8AB /* NSTextView+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NSTextView+Extensions.swift"; sourceTree = "<group>"; };
+		FD65A6561CFC06D30082D8AB /* JRSwizzle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JRSwizzle.h; sourceTree = "<group>"; };
+		FD65A6571CFC06D30082D8AB /* JRSwizzle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JRSwizzle.m; sourceTree = "<group>"; };
+		FD65A6581CFC06D30082D8AB /* KZFunctions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KZFunctions.h; sourceTree = "<group>"; };
+		FD65A6591CFC06D30082D8AB /* KZFunctions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KZFunctions.m; sourceTree = "<group>"; };
+		FD65A65A1CFC06D30082D8AB /* KZPluginHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KZPluginHelper.swift; sourceTree = "<group>"; };
+		FD65A6601CFC06E70082D8AB /* LXFColorLinkedConsole-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "LXFColorLinkedConsole-Bridging-Header.h"; sourceTree = "<group>"; };
+		FD71BDF51CFC1BBA00120456 /* LXFColorLinkedConsoleTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LXFColorLinkedConsoleTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		FD71BDF71CFC1BBA00120456 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		FD71BDF81CFC1BBA00120456 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		FD71BDFB1CFC1BBA00120456 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		FD71BDFD1CFC1BBA00120456 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		FD71BDFE1CFC1BBA00120456 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		FD71BE001CFC1BBA00120456 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		FD71BE031CFC1BBA00120456 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		FD71BE051CFC1BBA00120456 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FD71BE251CFC1C1100120456 /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
+		FD71BE271CFC1C3900120456 /* CustomLogTools.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomLogTools.h; sourceTree = "<group>"; };
+		FD71BE2C1CFC268500120456 /* NSTextStorage+XcodeColors.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSTextStorage+XcodeColors.h"; sourceTree = "<group>"; };
+		FD71BE2D1CFC268500120456 /* NSTextStorage+XcodeColors.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSTextStorage+XcodeColors.m"; sourceTree = "<group>"; };
+		FDC0CA631CFC8503002D32AF /* NSColor+NSColor_HEX.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NSColor+NSColor_HEX.swift"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		FD71BDF21CFC1BBA00120456 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		FD65A63C1CFC06790082D8AB = {
+			isa = PBXGroup;
+			children = (
+				FD65A6461CFC06790082D8AB /* LXFColorLinkedConsole */,
+				FD71BDF61CFC1BBA00120456 /* LXFColorLinkedConsoleTest */,
+				FD65A6451CFC06790082D8AB /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		FD65A6451CFC06790082D8AB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				FD65A6441CFC06790082D8AB /* LXFColorLinkedConsole.xcplugin */,
+				FD71BDF51CFC1BBA00120456 /* LXFColorLinkedConsoleTest.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		FD65A6461CFC06790082D8AB /* LXFColorLinkedConsole */ = {
+			isa = PBXGroup;
+			children = (
+				FD71BE281CFC243F00120456 /* XcodeColors */,
+				FD65A6521CFC06D30082D8AB /* Extensions */,
+				FD65A6551CFC06D30082D8AB /* Helper */,
+				FD65A64A1CFC06790082D8AB /* LXFColorLinkedConsole.swift */,
+				FD65A6601CFC06E70082D8AB /* LXFColorLinkedConsole-Bridging-Header.h */,
+				FD65A64C1CFC06790082D8AB /* Info.plist */,
+				FD65A6471CFC06790082D8AB /* Supporting Files */,
+			);
+			path = LXFColorLinkedConsole;
+			sourceTree = "<group>";
+		};
+		FD65A6471CFC06790082D8AB /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				FD65A6481CFC06790082D8AB /* LXFColorLinkedConsole.xcscheme */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		FD65A6521CFC06D30082D8AB /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				FD65A6531CFC06D30082D8AB /* NSTextStorage+Extensions.swift */,
+				FD65A6541CFC06D30082D8AB /* NSTextView+Extensions.swift */,
+				FDC0CA631CFC8503002D32AF /* NSColor+NSColor_HEX.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		FD65A6551CFC06D30082D8AB /* Helper */ = {
+			isa = PBXGroup;
+			children = (
+				FD65A6561CFC06D30082D8AB /* JRSwizzle.h */,
+				FD65A6571CFC06D30082D8AB /* JRSwizzle.m */,
+				FD65A6581CFC06D30082D8AB /* KZFunctions.h */,
+				FD65A6591CFC06D30082D8AB /* KZFunctions.m */,
+				FD65A65A1CFC06D30082D8AB /* KZPluginHelper.swift */,
+			);
+			path = Helper;
+			sourceTree = "<group>";
+		};
+		FD71BDF61CFC1BBA00120456 /* LXFColorLinkedConsoleTest */ = {
+			isa = PBXGroup;
+			children = (
+				FD71BE261CFC1C3900120456 /* CustomLogTools */,
+				FD71BE251CFC1C1100120456 /* PrefixHeader.pch */,
+				FD71BDF71CFC1BBA00120456 /* AppDelegate.h */,
+				FD71BDF81CFC1BBA00120456 /* AppDelegate.m */,
+				FD71BDFD1CFC1BBA00120456 /* ViewController.h */,
+				FD71BDFE1CFC1BBA00120456 /* ViewController.m */,
+				FD71BE001CFC1BBA00120456 /* Assets.xcassets */,
+				FD71BE021CFC1BBA00120456 /* Main.storyboard */,
+				FD71BE051CFC1BBA00120456 /* Info.plist */,
+				FD71BDFA1CFC1BBA00120456 /* Supporting Files */,
+			);
+			path = LXFColorLinkedConsoleTest;
+			sourceTree = "<group>";
+		};
+		FD71BDFA1CFC1BBA00120456 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				FD71BDFB1CFC1BBA00120456 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		FD71BE261CFC1C3900120456 /* CustomLogTools */ = {
+			isa = PBXGroup;
+			children = (
+				FD71BE271CFC1C3900120456 /* CustomLogTools.h */,
+			);
+			path = CustomLogTools;
+			sourceTree = "<group>";
+		};
+		FD71BE281CFC243F00120456 /* XcodeColors */ = {
+			isa = PBXGroup;
+			children = (
+				FD71BE2C1CFC268500120456 /* NSTextStorage+XcodeColors.h */,
+				FD71BE2D1CFC268500120456 /* NSTextStorage+XcodeColors.m */,
+			);
+			path = XcodeColors;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		FD65A6431CFC06790082D8AB /* LXFColorLinkedConsole */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FD65A64F1CFC06790082D8AB /* Build configuration list for PBXNativeTarget "LXFColorLinkedConsole" */;
+			buildPhases = (
+				FD65A6411CFC06790082D8AB /* Sources */,
+				FD65A6421CFC06790082D8AB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = LXFColorLinkedConsole;
+			productName = LXFColorLinkedConsole;
+			productReference = FD65A6441CFC06790082D8AB /* LXFColorLinkedConsole.xcplugin */;
+			productType = "com.apple.product-type.bundle";
+		};
+		FD71BDF41CFC1BBA00120456 /* LXFColorLinkedConsoleTest */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FD71BE221CFC1BBA00120456 /* Build configuration list for PBXNativeTarget "LXFColorLinkedConsoleTest" */;
+			buildPhases = (
+				FD71BDF11CFC1BBA00120456 /* Sources */,
+				FD71BDF21CFC1BBA00120456 /* Frameworks */,
+				FD71BDF31CFC1BBA00120456 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = LXFColorLinkedConsoleTest;
+			productName = LXFColorLinkedConsoleTest;
+			productReference = FD71BDF51CFC1BBA00120456 /* LXFColorLinkedConsoleTest.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		FD65A63D1CFC06790082D8AB /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0730;
+				LastUpgradeCheck = 0730;
+				ORGANIZATIONNAME = LXF;
+				TargetAttributes = {
+					FD65A6431CFC06790082D8AB = {
+						CreatedOnToolsVersion = 7.3.1;
+					};
+					FD71BDF41CFC1BBA00120456 = {
+						CreatedOnToolsVersion = 7.3.1;
+					};
+				};
+			};
+			buildConfigurationList = FD65A6401CFC06790082D8AB /* Build configuration list for PBXProject "LXFColorLinkedConsole" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = FD65A63C1CFC06790082D8AB;
+			productRefGroup = FD65A6451CFC06790082D8AB /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				FD65A6431CFC06790082D8AB /* LXFColorLinkedConsole */,
+				FD71BDF41CFC1BBA00120456 /* LXFColorLinkedConsoleTest */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		FD65A6421CFC06790082D8AB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FD65A6491CFC06790082D8AB /* LXFColorLinkedConsole.xcscheme in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FD71BDF31CFC1BBA00120456 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FD71BE011CFC1BBA00120456 /* Assets.xcassets in Resources */,
+				FD71BE041CFC1BBA00120456 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		FD65A6411CFC06790082D8AB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FDC0CA641CFC8503002D32AF /* NSColor+NSColor_HEX.swift in Sources */,
+				FD65A65E1CFC06D30082D8AB /* KZFunctions.m in Sources */,
+				FD71BE2E1CFC268500120456 /* NSTextStorage+XcodeColors.m in Sources */,
+				FD65A64B1CFC06790082D8AB /* LXFColorLinkedConsole.swift in Sources */,
+				FD65A65C1CFC06D30082D8AB /* NSTextView+Extensions.swift in Sources */,
+				FD65A65F1CFC06D30082D8AB /* KZPluginHelper.swift in Sources */,
+				FD65A65D1CFC06D30082D8AB /* JRSwizzle.m in Sources */,
+				FD65A65B1CFC06D30082D8AB /* NSTextStorage+Extensions.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FD71BDF11CFC1BBA00120456 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FD71BDFF1CFC1BBA00120456 /* ViewController.m in Sources */,
+				FD71BDFC1CFC1BBA00120456 /* main.m in Sources */,
+				FD71BDF91CFC1BBA00120456 /* AppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		FD71BE021CFC1BBA00120456 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FD71BE031CFC1BBA00120456 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		FD65A64D1CFC06790082D8AB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_OBJC_BRIDGING_HEADER = "/Users/LXF/Developer/08 Cocoa/Xcode Plug-in/LXFColorLinkedConsole/LXFColorLinkedConsole/LXFColorLinkedConsole-Bridging-Header.h";
+			};
+			name = Debug;
+		};
+		FD65A64E1CFC06790082D8AB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = macosx;
+				SWIFT_OBJC_BRIDGING_HEADER = "/Users/LXF/Developer/08 Cocoa/Xcode Plug-in/LXFColorLinkedConsole/LXFColorLinkedConsole/LXFColorLinkedConsole-Bridging-Header.h";
+			};
+			name = Release;
+		};
+		FD65A6501CFC06790082D8AB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				DEPLOYMENT_LOCATION = YES;
+				DSTROOT = "$(HOME)";
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
+				INFOPLIST_FILE = LXFColorLinkedConsole/Info.plist;
+				INSTALL_PATH = "/Library/Application Support/Developer/Shared/Xcode/Plug-ins";
+				LD_RUNPATH_SEARCH_PATHS = "$(DT_TOOLCHAIN_DIR)/usr/lib/swift/macosx";
+				PRODUCT_BUNDLE_IDENTIFIER = com.rdxer.LXFColorLinkedConsole;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "$(SRCROOT)/LXFColorLinkedConsole/LXFColorLinkedConsole-Bridging-Header.h";
+				WRAPPER_EXTENSION = xcplugin;
+			};
+			name = Debug;
+		};
+		FD65A6511CFC06790082D8AB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				DEPLOYMENT_LOCATION = YES;
+				DSTROOT = "$(HOME)";
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
+				INFOPLIST_FILE = LXFColorLinkedConsole/Info.plist;
+				INSTALL_PATH = "/Library/Application Support/Developer/Shared/Xcode/Plug-ins";
+				LD_RUNPATH_SEARCH_PATHS = "$(DT_TOOLCHAIN_DIR)/usr/lib/swift/macosx";
+				PRODUCT_BUNDLE_IDENTIFIER = com.rdxer.LXFColorLinkedConsole;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "$(SRCROOT)/LXFColorLinkedConsole/LXFColorLinkedConsole-Bridging-Header.h";
+				WRAPPER_EXTENSION = xcplugin;
+			};
+			name = Release;
+		};
+		FD71BE1C1CFC1BBA00120456 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/LXFColorLinkedConsoleTest/PrefixHeader.pch";
+				INFOPLIST_FILE = LXFColorLinkedConsoleTest/Info.plist;
+				INFOPLIST_PREFIX_HEADER = "";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.rdxer.LXFColorLinkedConsoleTest;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		FD71BE1D1CFC1BBA00120456 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/LXFColorLinkedConsoleTest/PrefixHeader.pch";
+				INFOPLIST_FILE = LXFColorLinkedConsoleTest/Info.plist;
+				INFOPLIST_PREFIX_HEADER = "";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.rdxer.LXFColorLinkedConsoleTest;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		FD65A6401CFC06790082D8AB /* Build configuration list for PBXProject "LXFColorLinkedConsole" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FD65A64D1CFC06790082D8AB /* Debug */,
+				FD65A64E1CFC06790082D8AB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FD65A64F1CFC06790082D8AB /* Build configuration list for PBXNativeTarget "LXFColorLinkedConsole" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FD65A6501CFC06790082D8AB /* Debug */,
+				FD65A6511CFC06790082D8AB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FD71BE221CFC1BBA00120456 /* Build configuration list for PBXNativeTarget "LXFColorLinkedConsoleTest" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FD71BE1C1CFC1BBA00120456 /* Debug */,
+				FD71BE1D1CFC1BBA00120456 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = FD65A63D1CFC06790082D8AB /* Project object */;
+}
