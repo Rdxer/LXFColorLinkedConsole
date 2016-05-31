@@ -6,6 +6,7 @@ Xcode 插件, 使用 CustomLogTools 可以实现 点击跳转到对应行,以及
 clone -> run -> 完全退出xcode -> 重新打开xcode -> 看见弹窗-> 点击 ```loadbundel```
 ###2.打印
 >1.将 CustomLogTools.h 拷贝到你项目中
+
 >2.pch 中 ```#import "CustomLogTools.h"```
 提供了这几种默认的方式
 ```
