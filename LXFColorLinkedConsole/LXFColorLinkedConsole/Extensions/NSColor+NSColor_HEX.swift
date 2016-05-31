@@ -10,15 +10,6 @@ import Foundation
 import AppKit
 
 
-//CGFloat colorComponentFrom(NSString *string, NSUInteger start, NSUInteger length) {
-//    NSString *substring = [string substringWithRange:NSMakeRange(start, length)];
-//    NSString *fullHex = length == 2 ? substring : [NSString stringWithFormat: @"%@%@", substring, substring];
-//    
-//    unsigned hexComponent;
-//    [[NSScanner scannerWithString: fullHex] scanHexInt: &hexComponent];
-//    return hexComponent / 255.0;
-//}
-
 func colorComponentFrom(string:String,start:Int,length:Int) -> CGFloat {
     let substring = (string as NSString).substringWithRange(NSMakeRange(start, length))
     let fullHex = length == 2 ? substring : (substring + substring)

@@ -39,7 +39,7 @@ extension NSTextStorage {
     private func injectLinksIntoLogs(range: NSRange) {
         let text = string as NSString
         let matches = pattern.matchesInString(string, options: .ReportProgress, range: NSRange(location: 0, length: text.length))
-        for result in matches where result.numberOfRanges == 12{
+        for result in matches where result.numberOfRanges == 13{
             let fullRange = result.rangeAtIndex(0)
             let prefixRange = result.rangeAtIndex(1)
             
@@ -55,6 +55,7 @@ extension NSTextStorage {
             let titleRange = result.rangeAtIndex(9)
             let showLineNumRange = result.rangeAtIndex(10)
             let fullContentRange = result.rangeAtIndex(11)
+            let suffixRange = result.rangeAtIndex(12)
             
             let fileName = "\(text.substringWithRange(fileNameRange)).\(text.substringWithRange(fileNameEXRange))"
             let lineNum = text.substringWithRange(lineNumRange)
@@ -79,6 +80,10 @@ extension NSTextStorage {
             // hide prefix
             addAttribute(NSFontAttributeName, value:NSFont.systemFontOfSize(0.0001), range: prefixRange)
             addAttribute(NSForegroundColorAttributeName, value: NSColor.clearColor(), range: prefixRange)
+            // hide suffix
+            addAttribute(NSFontAttributeName, value:NSFont.systemFontOfSize(0.0001), range: suffixRange)
+            addAttribute(NSForegroundColorAttributeName, value: NSColor.clearColor(), range: suffixRange)
+            
             
             // addAttribute title / fbg
             if let v = NSColor.color(colorWithHEXString: tfg){
@@ -99,7 +104,7 @@ extension NSTextStorage {
     }
     
     private var pattern: NSRegularExpression {
-          return try! NSRegularExpression(pattern: "(\\$\\((.*?)\\.(.*?)\\,(.*?)\\,(.*?),(.*?),(.*?),(.*?)\\))..(.*?).?\\+ (.*?) . (.*?)$", options: .CaseInsensitive)
+          return try! NSRegularExpression(pattern: "(\\$\\((.*?)\\.(.*?)\\,(.*?)\\,(.*?),(.*?),(.*?),(.*?)\\))..(.*?).?\\+ (.*?) . (.*?)(\\$\\(end\\))", options: .CaseInsensitive)
     }
 }
 
