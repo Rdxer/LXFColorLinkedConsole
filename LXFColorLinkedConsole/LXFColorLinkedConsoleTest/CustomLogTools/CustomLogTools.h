@@ -24,6 +24,10 @@
     LXFPrintf("😐",defaultColor,defaultColor,defaultColor,defaultColor,"🎉",format, ##__VA_ARGS__); \
 }
 
+// OK
+#define printOK(format, ...)   {\
+LXFPrintf("💯","#00F72C",defaultColor,"#00F72C",defaultColor,"🎉",format, ##__VA_ARGS__); \
+}
 
 // debug
 #define printD(format, ...)   {\

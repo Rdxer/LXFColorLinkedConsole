@@ -11,6 +11,5 @@
 
 #import "CustomLogTools.h"
 
-#define aaa "xxx"
 
 #endif /* PrefixHeader_pch */
