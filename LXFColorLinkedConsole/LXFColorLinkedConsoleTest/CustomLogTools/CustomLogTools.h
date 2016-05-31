@@ -20,9 +20,31 @@
 
 #define defaultColor "_"
 
-#define printW(format, ...)   {\
-    LXFPrintf("⚠️",defaultColor,defaultColor,"00f",content,"🍘",format, ##__VA_ARGS__); \
+#define NSLog(format, ...)   {\
+    LXFPrintf("😐",defaultColor,defaultColor,defaultColor,defaultColor,"🎉",format, ##__VA_ARGS__); \
 }
+
+
+// debug
+#define printD(format, ...)   {\
+    LXFPrintf("😁","00f",defaultColor,"00f",defaultColor,"🎉",format, ##__VA_ARGS__); \
+}
+
+// Warning
+#define printW(format, ...)   {\
+    LXFPrintf("⚠️","d84",defaultColor,"d84",defaultColor,"🎉",format, ##__VA_ARGS__); \
+}
+
+// error
+#define printE(format, ...)   {\
+    LXFPrintf("❌","f00",defaultColor,"f00",defaultColor,"🎉",format, ##__VA_ARGS__); \
+}
+
+// print obj
+#define printOBJ(obj)   {\
+    LXFPrintf("⚽️",defaultColor,defaultColor,defaultColor,defaultColor,"🎉",@"%@",obj); \
+}
+
 
 
 

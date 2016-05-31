@@ -39,23 +39,43 @@ extension NSTextStorage {
     private func injectLinksIntoLogs(range: NSRange) {
         let text = string as NSString
         let matches = pattern.matchesInString(string, options: .ReportProgress, range: NSRange(location: 0, length: text.length))
-        for result in matches where result.numberOfRanges == 13{
-            let fullRange = result.rangeAtIndex(0)
-            let prefixRange = result.rangeAtIndex(1)
+        for result in matches where result.numberOfRanges == 14{
             
-            let fileNameRange = result.rangeAtIndex(2)
-            let fileNameEXRange = result.rangeAtIndex(3)
-            let lineNumRange = result.rangeAtIndex(4)
+            var index = 0
             
-            let tfgRange = result.rangeAtIndex(5)
-            let tbgRange = result.rangeAtIndex(6)
-            let cfgRange = result.rangeAtIndex(7)
-            let cbgRange = result.rangeAtIndex(8)
+            let fullRange = result.rangeAtIndex(index)
+            index += 1
             
-            let titleRange = result.rangeAtIndex(9)
-            let showLineNumRange = result.rangeAtIndex(10)
-            let fullContentRange = result.rangeAtIndex(11)
-            let suffixRange = result.rangeAtIndex(12)
+            let prefixRange = result.rangeAtIndex(index)
+            index += 1
+            let fileNameRange = result.rangeAtIndex(index)
+            index += 1
+            let fileNameEXRange = result.rangeAtIndex(index)
+            index += 1
+            let lineNumRange = result.rangeAtIndex(index)
+            index += 1
+            
+            
+            let tfgRange = result.rangeAtIndex(index)
+            index += 1
+            let tbgRange = result.rangeAtIndex(index)
+            index += 1
+            let cfgRange = result.rangeAtIndex(index)
+            index += 1
+            let cbgRange = result.rangeAtIndex(index)
+            index += 1
+            
+            let fulltitleRange = result.rangeAtIndex(index)
+            index += 1
+            let titleRange = result.rangeAtIndex(index)
+            index += 1
+            let showLineNumRange = result.rangeAtIndex(index)
+            index += 1
+            
+            
+            let fullContentRange = result.rangeAtIndex(index)
+            index += 1
+            let suffixRange = result.rangeAtIndex(index)
             
             let fileName = "\(text.substringWithRange(fileNameRange)).\(text.substringWithRange(fileNameEXRange))"
             let lineNum = text.substringWithRange(lineNumRange)
@@ -73,9 +93,9 @@ extension NSTextStorage {
             print(fileName+"_"+lineNum+"_"+tfg+"_"+tbg+"_"+cfg+"_"+cbg+"_"+title+"_"+showLineNum+"_"+fullContent)
             
             // link
-            addAttribute(NSLinkAttributeName, value: "", range: titleRange)
-            addAttribute(LXFColorLinkedConsole.Strings.linkedFileName, value: fileName, range: titleRange)
-            addAttribute(LXFColorLinkedConsole.Strings.linkedLine, value: lineNum, range: titleRange)
+            addAttribute(NSLinkAttributeName, value: "", range: fulltitleRange)
+            addAttribute(LXFColorLinkedConsole.Strings.linkedFileName, value: fileName, range: fulltitleRange)
+            addAttribute(LXFColorLinkedConsole.Strings.linkedLine, value: lineNum, range: fulltitleRange)
             
             // hide prefix
             addAttribute(NSFontAttributeName, value:NSFont.systemFontOfSize(0.0001), range: prefixRange)
@@ -87,10 +107,10 @@ extension NSTextStorage {
             
             // addAttribute title / fbg
             if let v = NSColor.color(colorWithHEXString: tfg){
-                addAttribute(NSForegroundColorAttributeName, value: v, range: titleRange)
+                addAttribute(NSForegroundColorAttributeName, value: v, range: fulltitleRange)
             }
             if let v = NSColor.color(colorWithHEXString: tbg){
-                addAttribute(NSBackgroundColorAttributeName, value: v, range: titleRange)
+                addAttribute(NSBackgroundColorAttributeName, value: v, range: fulltitleRange)
             }
             
             // addAttribute content / fbg
@@ -104,7 +124,7 @@ extension NSTextStorage {
     }
     
     private var pattern: NSRegularExpression {
-          return try! NSRegularExpression(pattern: "(\\$\\((.*?)\\.(.*?)\\,(.*?)\\,(.*?),(.*?),(.*?),(.*?)\\))..(.*?).?\\+ (.*?) . (.*?)(\\$\\(end\\))", options: .CaseInsensitive)
+          return try! NSRegularExpression(pattern: "(\\$\\((.*?)\\.(.*?)\\,(.*?)\\,(.*?),(.*?),(.*?),(.*?)\\)).((.*?).?\\+ (.*?)) . (.*?)(\\$\\(end\\))", options: .CaseInsensitive)
     }
 }
 

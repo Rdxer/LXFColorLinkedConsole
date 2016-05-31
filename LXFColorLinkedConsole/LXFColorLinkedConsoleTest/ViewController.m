@@ -13,12 +13,14 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-
-    LXFPrintf("⚠️","0f0","f0f","00f","f00","🍘",@"aaa");
+    
+     LXFPrintf("😁","f00","9101f2","0f0","#0101f2","🎉",@"这个是啥");
+    
+    NSLog(@"这个是啥");
+    printD(@"这个是啥");
     printW(@"这个是啥");
-    printW(@"这个是啥");
-    printW(@"这个是啥");
-    printW(@"这个是啥");
+    printE(@"这个是啥");
+    printOBJ(self)
 }
 
 - (void)setRepresentedObject:(id)representedObject {
