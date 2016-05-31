@@ -14,6 +14,6 @@ pch 中 ```#import "CustomLogTools.h"```
     printE(@"这个是内容");
 ```
 效果:
-![效果图](https://github.com/Rdxer/LXFColorLinkedConsole/img.png)
+![效果图](https://github.com/Rdxer/LXFColorLinkedConsole/blob/master/img.png?raw=true)
 
 
