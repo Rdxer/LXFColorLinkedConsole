@@ -124,7 +124,7 @@ extension NSTextStorage {
     }
     
     private var pattern: NSRegularExpression {
-          return try! NSRegularExpression(pattern: "(\\$\\((.*?)\\.(.*?)\\,(.*?)\\,(.*?),(.*?),(.*?),(.*?)\\)).((.*?).?\\+ (.*?)) . (.*?)(\\$\\(end\\))", options: .CaseInsensitive)
+          return try! NSRegularExpression(pattern: "(\\$\\((.*?)\\.(.*?)\\,(.*?)\\,(.*?),(.*?),(.*?),(.*?)\\)).((.*?).?\\+ (.*?)) . (.*?)(\\$\\(end\\))", options:.DotMatchesLineSeparators)
     }
 }
 

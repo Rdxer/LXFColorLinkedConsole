@@ -19,7 +19,7 @@
     NSLog(@"这个是内容");
     printOK(@"这个是内容");
     printD(@"这个是内容");
-    printW(@"这个是内容");
+    printW(@"这个\t\n是内容");
     printE(@"这个是内容");
 }
 
