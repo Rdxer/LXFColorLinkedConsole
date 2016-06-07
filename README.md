@@ -21,3 +21,10 @@ clone -> run -> 完全退出xcode -> 重新打开xcode -> 看见弹窗-> 点击 
 ![效果图](https://github.com/Rdxer/LXFColorLinkedConsole/blob/master/img.png?raw=true)
 
 
+##卸载:
+打开路径 ``` shift + cmd + G ``` 
+``` 
+~/Library/Application Support/Developer/Shared/Xcode/Plug-ins
+```
+删除文件 ``` LXFColorLinkedConsole.xcplugin ```
+
