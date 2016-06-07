@@ -9,13 +9,6 @@
 #ifndef CustomLogTools_h
 #define CustomLogTools_h
 
-#define XCC         @"\033["
-#define XCCFG(rgb)  XCC @"fg"rgb";"
-#define XCCBG(rgb)  XCC @"bg"rgb";"
-
-#define XCCFG_END   XCC @"fg;"
-#define XCCBG_END   XCC @"bg;"
-#define XCC_END     XCC ";"
 
 
 #define defaultColor "_"
