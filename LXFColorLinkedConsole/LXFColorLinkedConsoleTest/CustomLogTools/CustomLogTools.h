@@ -44,7 +44,7 @@ LXFPrintf("💯","#00F72C",defaultColor,"#00F72C",defaultColor,"🎉",format, ##
 
 
 
-
+// titlefg title 前景色,titlebg 背景色,contentfg 内容前景色,contentbg 以此类推
 #define LXFPrintf(tag,titlefg,titlebg,contentfg,contentbg,split,format, ...)  {\
     const char *fileName = [NSString stringWithUTF8String:__FILE__].lastPathComponent.UTF8String;\
     const char *content = [[NSString stringWithFormat:format,##__VA_ARGS__]UTF8String];\
